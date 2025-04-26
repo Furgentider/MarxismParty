@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Уплата госпошлины - Цифровая Марксистская Партия</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <style>
+        .document-content {
+            padding: 20px;
+        }
+        .document-content h3 {
+            color: var(--soviet-red);
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1.8rem;
+        }
+        .document-content h4 {
+            color: var(--soviet-red);
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            border-bottom: 2px solid var(--soviet-gold);
+            padding-bottom: 10px;
+        }
+        .document-content p {
+            text-align: justify;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        .payment-info {
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 2px solid var(--soviet-gold);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 30px 0;
+        }
+        .payment-info .row {
+            display: flex;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+        .payment-info .label {
+            width: 35%;
+            font-weight: bold;
+            color: var(--soviet-gold);
+            padding-right: 15px;
+        }
+        .payment-info .value {
+            width: 65%;
+        }
+        .payment-total {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--soviet-red);
+            text-align: right;
+            margin-top: 20px;
+            border-top: 1px solid var(--soviet-gold);
+            padding-top: 15px;
+        }
+        .payment-details {
+            margin-bottom: 20px;
+        }
+        .payment-details ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+        .payment-details li {
+            margin-bottom: 8px;
+        }
+        .signature {
+            margin-top: 40px;
+            text-align: right;
+        }
+        .stamp {
+            width: 120px;
+            height: 120px;
+            border: 2px solid var(--soviet-gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: auto;
+            margin-bottom: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        .stamp:before {
+            content: "☭";
+            font-size: 60px;
+            color: var(--soviet-red);
+            position: absolute;
+            opacity: 0.3;
+        }
+        .date {
+            color: var(--soviet-gold);
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        @media (max-width: 768px) {
+            .payment-info .label, .payment-info .value {
+                width: 100%;
+            }
+            .payment-info .label {
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="star-container">
+                <div class="star">★</div>
+            </div>
+            <h1>Цифровая Марксистская Партия</h1>
+            <div class="hammer-sickle">☭</div>
+        </header>
+
+        <main>
+            <div class="document-container">
+                <div class="document-header">
+                    <h2>Уплата госпошлины</h2>
+                </div>
+                <div class="document-content">
+                    <h3>Квитанция об уплате государственной пошлины</h3>
+                    
+                    <div class="payment-info">
+                        <div class="row">
+                            <div class="label">Наименование плательщика:</div>
+                            <div class="value">Иосиф Виссарионович Горийский, генеральный секретарь Цифровой Марксистской Партии (ЦМП)</div>
+                        </div>
+                        <div class="row">
+                            <div class="label">ИНН плательщика:</div>
+                            <div class="value">123456789012</div>
+                        </div>
+                        <div class="row">
+                            <div class="label">Получатель платежа:</div>
+                            <div class="value">Министерство юстиции Российской Федерации</div>
+                        </div>
+                        <div class="row">
+                            <div class="label">ИНН получателя:</div>
+                            <div class="value">7706014740</div>
+                        </div>
+                        <div class="row">
+                            <div class="label">КПП:</div>
+                            <div class="value">770601001</div>
+                        </div>
+                        <div class="row">
+                            <div class="label">БИК банка получателя:</div>
+                            <div class="value">044525225</div>
+                        </div>
+                        <div class="row">
+                            <div class="label">Расчётный счёт:</div>
+                            <div class="value">40101810045250010041</div>
+                        </div>
+                        <div class="row">
+                            <div class="label">Банк получателя:</div>
+                            <div class="value">ГУ Банка России по ЦФО</div>
+                        </div>
+                        <div class="row">
+                            <div class="label">КБК:</div>
+                            <div class="value">18210807010011000110 (код для госпошлины за регистрацию политической партии)</div>
+                        </div>
+                        <div class="row">
+                            <div class="label">ОКТМО:</div>
+                            <div class="value">45384000 (для Москвы)</div>
+                        </div>
+                        
+                        <div class="payment-details">
+                            <div class="label">Назначение платежа:</div>
+                            <ul>
+                                <li>Госпошлина за регистрацию Цифровой Марксистской Партии (ЦМП) — 3500 рублей</li>
+                                <li>Госпошлина за регистрацию 45 региональных отделений ЦМП (45 × 3500 рублей) — 157 500 рублей</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="payment-total">
+                            Общая сумма: 3500 + 157 500 = 161 000 рублей
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="label">Дата платежа:</div>
+                        <div class="value">14 апреля 2025 года</div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="label">Номер платёжного документа:</div>
+                        <div class="value">№ 2025-ЦМП-001</div>
+                    </div>
+                    
+                    <div class="signature">
+                        <div class="stamp"></div>
+                        <p>Подпись плательщика: Иосиф Виссарионович Горийский</p>
+                        <p class="date">14 апреля 2025 года</p>
+                    </div>
+                </div>
+                <a href="index.html" class="back-button">← Вернуться на главную</a>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2025 Цифровая Марксистская Партия - Пролетарии всех стран, соединяйтесь!</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

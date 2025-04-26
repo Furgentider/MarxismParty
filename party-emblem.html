@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список выдвигаемых кандидатов - Цифровая Марксистская Партия</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <style>
+        .candidate-list {
+            padding: 20px 0;
+            counter-reset: candidate-counter;
+        }
+        .candidate-item {
+            padding: 15px;
+            margin: 10px 0;
+            border-bottom: 1px solid #990000;
+            background-color: rgba(255, 215, 0, 0.05);
+            border-radius: 5px;
+            position: relative;
+            padding-left: 50px;
+            transition: all 0.3s ease;
+        }
+        .candidate-item:hover {
+            background-color: rgba(255, 215, 0, 0.15);
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .candidate-item::before {
+            counter-increment: candidate-counter;
+            content: counter(candidate-counter);
+            position: absolute;
+            left: 15px;
+            color: var(--soviet-gold);
+            font-weight: bold;
+            font-size: 1.2rem;
+            background-color: var(--soviet-dark-red);
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--soviet-gold);
+        }
+        .candidate-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            gap: 15px;
+        }
+        .document-header-info {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: rgba(255, 215, 0, 0.05);
+            border-radius: 10px;
+            border: 1px solid var(--soviet-gold);
+        }
+        .document-header-info p {
+            margin: 5px 0;
+        }
+        .document-title {
+            text-align: center;
+            margin: 30px 0;
+            font-weight: bold;
+            padding: 20px;
+            background-color: var(--soviet-dark-red);
+            border-radius: 10px;
+            border: 2px solid var(--soviet-gold);
+            color: var(--soviet-gold);
+        }
+        .document-title h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        .document-footer {
+            margin-top: 40px;
+            border-top: 2px solid var(--soviet-gold);
+            padding-top: 20px;
+            background-color: rgba(255, 215, 0, 0.05);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .candidate-list {
+                grid-template-columns: 1fr;
+            }
+            .candidate-item {
+                padding-left: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="star-container">
+                <div class="star">★</div>
+            </div>
+            <h1>Цифровая Марксистская Партия</h1>
+            <div class="hammer-sickle">☭</div>
+        </header>
+
+        <main>
+            <div class="document-container">
+                <div class="document-header">
+                    <h2>Список выдвигаемых кандидатов</h2>
+                </div>
+                <div class="document-content">
+                    <div class="document-header-info">
+                        <p><strong>Цифровая Марксистская Партия (ЦМП)</strong></p>
+                        <p><strong>Документ № ЦМП-2025/01 №228</strong></p>
+                        <p><strong>Дата: 26 апреля 2025 года</strong></p>
+                    </div>
+
+                    <div class="document-title">
+                        <h3>СПИСОК КАНДИДАТОВ</h3>
+                        <p>на выборы в Государственную Думу Федерального Собрания Российской Федерации</p>
+                        <p>от Цифровой Марксистской Партии (ЦМП)</p>
+                    </div>
+
+                    <div class="candidate-list">
+                        <div class="candidate-item">Горийский Иосиф Виссарионович</div>
+                        <div class="candidate-item">Маслов Алексей Иванович</div>
+                        <div class="candidate-item">Хонсан Владимир Дмитриевич</div>
+                        <div class="candidate-item">Казак Николай Анисимович</div>
+                        <div class="candidate-item">Гонабобель Джордж Александрович</div>
+                        <div class="candidate-item">Флойд Джордж Майклович</div>
+                        <div class="candidate-item">Гонорея Валерий Петрович</div>
+                        <div class="candidate-item">Кормильцев Александр Сергеевич</div>
+                        <div class="candidate-item">Калоежко Дмитрий Олегович</div>
+                        <div class="candidate-item">Пивоваров Сергей Андреевич</div>
+                        <div class="candidate-item">Чесночков Иван Константинович</div>
+                        <div class="candidate-item">Гуляшников Павел Викторович</div>
+                        <div class="candidate-item">Пердежко Виктор Евгеньевич</div>
+                        <div class="candidate-item">Сморчков Роман Борисович</div>
+                        <div class="candidate-item">Квашеный Артём Владимирович</div>
+                        <div class="candidate-item">Пупырко Олег Игоревич</div>
+                        <div class="candidate-item">Сопелькин Максим Павлович</div>
+                        <div class="candidate-item">Хрюшкин Геннадий Семёнович</div>
+                        <div class="candidate-item">Пуканов Антон Вячеславович</div>
+                        <div class="candidate-item">Шлепкин Фёдор Николаевич</div>
+                        <div class="candidate-item">Мочалкин Юрий Алексеевич</div>
+                        <div class="candidate-item">Трындец Виктор Иванович</div>
+                        <div class="candidate-item">Гнильцов Арсений Михайлович</div>
+                        <div class="candidate-item">Капустин Валентин Олегович</div>
+                        <div class="candidate-item">Бздюшкин Илья Константинович</div>
+                        <div class="candidate-item">Хлебушков Григорий Сергеевич</div>
+                        <div class="candidate-item">Пырьев Даниил Андреевич</div>
+                        <div class="candidate-item">Свистулькин Егор Викторович</div>
+                        <div class="candidate-item">Кисляков Борис Иванович</div>
+                        <div class="candidate-item">Жопкин Аркадий Петрович</div>
+                        <div class="candidate-item">Слюнявчик Павел Александрович</div>
+                        <div class="candidate-item">Пердунов Кирилл Евгеньевич</div>
+                        <div class="candidate-item">Мямлин Станислав Олегович</div>
+                        <div class="candidate-item">Кряквин Игорь Дмитриевич</div>
+                        <div class="candidate-item">Писюлькин Вадим Николаевич</div>
+                        <div class="candidate-item">Тухляков Семён Артёмович</div>
+                        <div class="candidate-item">Сморкалин Виктор Павлович</div>
+                        <div class="candidate-item">Храпко Сергей Иванович</div>
+                        <div class="candidate-item">Бульков Артём Игоревич</div>
+                        <div class="candidate-item">Квакшин Роман Владимирович</div>
+                        <div class="candidate-item">Плюхин Андрей Михайлович</div>
+                        <div class="candidate-item">Сыроквашин Олег Константинович</div>
+                        <div class="candidate-item">Гундосов Иван Фёдорович</div>
+                        <div class="candidate-item">Пыхтелкин Максим Вячеславович</div>
+                        <div class="candidate-item">Трындин Пётр Александрович</div>
+                        <div class="candidate-item">Пукалкин Георгий Сергеевич</div>
+                        <div class="candidate-item">Соплюшкин Евгений Викторович</div>
+                        <div class="candidate-item">Мочегон Арсений Олегович</div>
+                        <div class="candidate-item">Хрюпкин Дмитрий Иванович</div>
+                        <div class="candidate-item">Жевалкин Борис Андреевич</div>
+                        <div class="candidate-item">Бздюлько Иван Павлович</div>
+                        <div class="candidate-item">Плюшкин Валентин Михайлович</div>
+                        <div class="candidate-item">Сморкалов Антон Евгеньевич</div>
+                        <div class="candidate-item">Пердяев Никита Сергеевич</div>
+                        <div class="candidate-item">Гонорейко Станислав Викторович</div>
+                        <div class="candidate-item">Кваснюк Илья Константинович</div>
+                        <div class="candidate-item">Пупырёв Фёдор Алексеевич</div>
+                        <div class="candidate-item">Хлебушек Аркадий Иванович</div>
+                        <div class="candidate-item">Тухлов Сергей Петрович</div>
+                        <div class="candidate-item">Свистоплясов Олег Вячеславович</div>
+                        <div class="candidate-item">Мямляев Григорий Николаевич</div>
+                        <div class="candidate-item">Писюков Артём Олегович</div>
+                        <div class="candidate-item">Крякалов Виктор Сергеевич</div>
+                        <div class="candidate-item">Жопков Егор Андреевич</div>
+                        <div class="candidate-item">Слюнтяев Павел Михайлович</div>
+                        <div class="candidate-item">Пердушкин Роман Евгеньевич</div>
+                        <div class="candidate-item">Гундоскин Семён Иванович</div>
+                        <div class="candidate-item">Пыхтелков Даниил Владимирович</div>
+                        <div class="candidate-item">Трындецов Кирилл Фёдорович</div>
+                        <div class="candidate-item">Пукалов Максим Константинович</div>
+                        <div class="candidate-item">Соплюков Андрей Вячеславович</div>
+                        <div class="candidate-item">Мочегонов Арсений Сергеевич</div>
+                        <div class="candidate-item">Хрюпков Борис Олегович</div>
+                        <div class="candidate-item">Жевалко Александр Петрович</div>
+                        <div class="candidate-item">Бздюлькин Валентин Иванович</div>
+                        <div class="candidate-item">Плюшков Антон Михайлович</div>
+                        <div class="candidate-item">Сморкалкин Иван Евгеньевич</div>
+                        <div class="candidate-item">Пердякин Никита Викторович</div>
+                        <div class="candidate-item">Гонорейкин Олег Сергеевич</div>
+                        <div class="candidate-item">Кваснюков Павел Константинович</div>
+                        <div class="candidate-item">Пупыревский Фёдор Алексеевич</div>
+                        <div class="candidate-item">Хлебушков Аркадий Михайлович</div>
+                        <div class="candidate-item">Тухловский Егор Петрович</div>
+                        <div class="candidate-item">Свистоплясов Виктор Вячеславович</div>
+                        <div class="candidate-item">Мямлякин Григорий Николаевич</div>
+                        <div class="candidate-item">Писюльков Артём Олегович</div>
+                        <div class="candidate-item">Крякаловский Семён Сергеевич</div>
+                        <div class="candidate-item">Жопковский Даниил Андреевич</div>
+                        <div class="candidate-item">Слюнтяйкин Павел Михайлович</div>
+                        <div class="candidate-item">Пердушков Роман Евгеньевич</div>
+                        <div class="candidate-item">Гундосовский Кирилл Фёдорович</div>
+                        <div class="candidate-item">Пыхтелковский Максим Константинович</div>
+                        <div class="candidate-item">Трындецовский Андрей Вячеславович</div>
+                        <div class="candidate-item">Пукаловский Арсений Сергеевич</div>
+                        <div class="candidate-item">Соплюковский Борис Олегович</div>
+                        <div class="candidate-item">Мочегоновский Валентин Александрович</div>
+                        <div class="candidate-item">Хрюпковский Антон Петрович</div>
+                        <div class="candidate-item">Жевалковский Иван Михайлович</div>
+                        <div class="candidate-item">Бздюльковский Олег Евгеньевич</div>
+                        <div class="candidate-item">Плюшковский Никита Викторович</div>
+                    </div>
+
+                    <div class="document-footer">
+                        <p><strong>Утверждено:</strong></p>
+                        <p>Генеральный секретарь Цифровой Марксисткой Партии Горийский И.В.</p>
+                        <p>Дата: 26 апреля 2025 года</p>
+                    </div>
+                </div>
+
+                <a href="index.html" class="back-button">Вернуться на главную</a>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2025 Цифровая Марксистская Партия - Пролетарии всех стран, соединяйтесь!</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

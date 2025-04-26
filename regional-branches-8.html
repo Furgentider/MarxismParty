@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Региональные отделения - Цифровая Марксистская Партия</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <style>
+        .protocol-section {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            border: 1px solid var(--soviet-gold);
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.03);
+        }
+        
+        .protocol-section h4 {
+            color: var(--soviet-gold);
+            border-bottom: 2px solid var(--soviet-red);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .protocol-meta {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .protocol-meta p {
+            margin: 0.3rem 0;
+        }
+        
+        .date-header {
+            font-size: 1.2rem;
+            color: var(--soviet-gold);
+            margin: 1.5rem 0;
+            text-align: center;
+            background-color: rgba(187, 10, 10, 0.1);
+            padding: 0.5rem;
+            border-radius: 5px;
+        }
+        
+        .protocol-votes {
+            background-color: rgba(255, 215, 0, 0.1);
+            padding: 0.5rem;
+            border-radius: 3px;
+            margin: 0.5rem 0;
+        }
+        
+        .signatures {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px dashed var(--soviet-gold);
+            font-style: italic;
+        }
+        
+        .pagination {
+            text-align: center;
+            margin: 2rem 0;
+            padding: 1rem;
+            background-color: rgba(187, 10, 10, 0.1);
+            border-radius: 5px;
+        }
+        
+        .region-count {
+            display: inline-block;
+            background-color: var(--soviet-red);
+            color: white;
+            padding: 0.2rem 0.5rem;
+            border-radius: 3px;
+            margin-left: 0.5rem;
+            font-size: 0.9rem;
+        }
+        
+        .tab-navigation {
+            display: flex;
+            margin: 1rem 0;
+            border-bottom: 2px solid var(--soviet-red);
+        }
+        
+        .tab-navigation button {
+            background: none;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            margin-right: 0.5rem;
+            color: white;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        
+        .tab-navigation button.active {
+            background-color: var(--soviet-red);
+            font-weight: bold;
+        }
+        
+        .tab-navigation button:hover:not(.active) {
+            background-color: rgba(187, 10, 10, 0.3);
+        }
+        
+        .final-stats {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background-color: rgba(187, 10, 10, 0.2);
+            border-radius: 5px;
+            border: 1px solid var(--soviet-gold);
+        }
+        
+        .final-stats h3 {
+            color: var(--soviet-gold);
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        
+        .stat-box {
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 1rem;
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            color: var(--soviet-gold);
+            font-weight: bold;
+        }
+        
+        .stat-label {
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="star-container">
+                <div class="star">★</div>
+            </div>
+            <h1>Цифровая Марксистская Партия</h1>
+            <div class="hammer-sickle">☭</div>
+        </header>
+
+        <main>
+            <div class="document-container">
+                <div class="document-header">
+                    <h2>Региональные отделения</h2>
+                </div>
+                <div class="document-content">
+                    <h3>Протоколы учредительных собраний региональных отделений ЦМП</h3>
+                    
+                    <div class="tab-navigation">
+                        <button>14 апреля</button>
+                        <button>15 апреля</button>
+                        <button class="active">21 апреля</button>
+                    </div>
+                    
+                    <div class="date-header">
+                        <p>21 апреля 2025 года</p>
+                    </div>
+                    
+                    <div class="protocol-section">
+                        <h4>41. Орловская область <span class="region-count">10 членов</span></h4>
+                        <div class="protocol-meta">
+                            <div>
+                                <p><strong>Дата:</strong> 21 апреля 2025 года</p>
+                                <p><strong>Место:</strong> г. Орёл, ул. Тургенева, д. 4</p>
+                            </div>
+                            <div>
+                                <p><strong>Присутствовали:</strong> 10 членов</p>
+                                <p><strong>Делегаты:</strong> Татьяна Орловская, Константин Железнодорожный</p>
+                            </div>
+                        </div>
+                        
+                        <p><strong>Повестка дня:</strong></p>
+                        <ol>
+                            <li>Создание регионального отделения ЦМП в Орловской области.</li>
+                            <li>Выборы руководителя отделения.</li>
+                        </ol>
+                        
+                        <p><strong>Решения:</strong></p>
+                        <ol>
+                            <li>Создано региональное отделение ЦМП в Орловской области.<br>
+                            <div class="protocol-votes">Голосование: «за» — 10, «против» — 0, «воздержались» — 0.</div></li>
+                            <li>Руководителем избрана Татьяна Орловская.<br>
+                            <div class="protocol-votes">Голосование: «за» — 10, «против» — 0, «воздержались» — 0.</div></li>
+                        </ol>
+                        
+                        <div class="signatures">
+                            <p><strong>Руководитель:</strong> Татьяна Орловская</p>
+                            <p><strong>Секретарь собрания:</strong> Константин Железнодорожный</p>
+                        </div>
+                    </div>
+                    
+                    <div class="protocol-section">
+                        <h4>42. Брянская область <span class="region-count">10 членов</span></h4>
+                        <div class="protocol-meta">
+                            <div>
+                                <p><strong>Дата:</strong> 21 апреля 2025 года</p>
+                                <p><strong>Место:</strong> г. Брянск, ул. Партизанская, д. 6</p>
+                            </div>
+                            <div>
+                                <p><strong>Присутствовали:</strong> 10 членов</p>
+                                <p><strong>Делегаты:</strong> Константин Железнодорожный, Елена Лесная</p>
+                            </div>
+                        </div>
+                        
+                        <p><strong>Повестка дня:</strong></p>
+                        <ol>
+                            <li>Создание регионального отделения ЦМП в Брянской области.</li>
+                            <li>Выборы руководителя отделения.</li>
+                        </ol>
+                        
+                        <p><strong>Решения:</strong></p>
+                        <ol>
+                            <li>Создано региональное отделение ЦМП в Брянской области.<br>
+                            <div class="protocol-votes">Голосование: «за» — 10, «против» — 0, «воздержались» — 0.</div></li>
+                            <li>Руководителем избран Константин Железнодорожный.<br>
+                            <div class="protocol-votes">Голосование: «за» — 10, «против» — 0, «воздержались» — 0.</div></li>
+                        </ol>
+                        
+                        <div class="signatures">
+                            <p><strong>Руководитель:</strong> Константин Железнодорожный</p>
+                            <p><strong>Секретарь собрания:</strong> Елена Лесная</p>
+                        </div>
+                    </div>
+                    
+                    <div class="protocol-section">
+                        <h4>43. Смоленская область <span class="region-count">10 членов</span></h4>
+                        <div class="protocol-meta">
+                            <div>
+                                <p><strong>Дата:</strong> 21 апреля 2025 года</p>
+                                <p><strong>Место:</strong> г. Смоленск, ул. Гагарина, д. 9</p>
+                            </div>
+                            <div>
+                                <p><strong>Присутствовали:</strong> 10 членов</p>
+                                <p><strong>Делегаты:</strong> Елена Лесная, Григорий Октябрьский</p>
+                            </div>
+                        </div>
+                        
+                        <p><strong>Повестка дня:</strong></p>
+                        <ol>
+                            <li>Создание регионального отделения ЦМП в Смоленской области.</li>
+                            <li>Выборы руководителя отделения.</li>
+                        </ol>
+                        
+                        <p><strong>Решения:</strong></p>
+                        <ol>
+                            <li>Создано региональное отделение ЦМП в Смоленской области.<br>
+                            <div class="protocol-votes">Голосование: «за» — 10, «против» — 0, «воздержались» — 0.</div></li>
+                            <li>Руководителем избрана Елена Лесная.<br>
+                            <div class="protocol-votes">Голосование: «за» — 10, «против» — 0, «воздержались» — 0.</div></li>
+                        </ol>
+                        
+                        <div class="signatures">
+                            <p><strong>Руководитель:</strong> Елена Лесная</p>
+                            <p><strong>Секретарь собрания:</strong> Григорий Октябрьский</p>
+                        </div>
+                    </div>
+                    
+                    <div class="protocol-section">
+                        <h4>44. Калужская область <span class="region-count">10 членов</span></h4>
+                        <div class="protocol-meta">
+                            <div>
+                                <p><strong>Дата:</strong> 21 апреля 2025 года</p>
+                                <p><strong>Место:</strong> г. Калуга, ул. Циолковского, д. 7</p>
+                            </div>
+                            <div>
+                                <p><strong>Присутствовали:</strong> 10 членов</p>
+                                <p><strong>Делегаты:</strong> Григорий Октябрьский, Антон Космический</p>
+                            </div>
+                        </div>
+                        
+                        <p><strong>Повестка дня:</strong></p>
+                        <ol>
+                            <li>Создание регионального отделения ЦМП в Калужской области.</li>
+                            <li>Выборы руководителя отделения.</li>
+                        </ol>
+                        
+                        <p><strong>Решения:</strong></p>
+                        <ol>
+                            <li>Создано региональное отделение ЦМП в Калужской области.<br>
+                            <div class="protocol-votes">Голосование: «за» — 10, «против» — 0, «воздержались» — 0.</div></li>
+                            <li>Руководителем избран Григорий Октябрьский.<br>
+                            <div class="protocol-votes">Голосование: «за» — 10, «против» — 0, «воздержались» — 0.</div></li>
+                        </ol>
+                        
+                        <div class="signatures">
+                            <p><strong>Руководитель:</strong> Григорий Октябрьский</p>
+                            <p><strong>Секретарь собрания:</strong> Антон Космический</p>
+                        </div>
+                    </div>
+                    
+                    <div class="protocol-section">
+                        <h4>45. Московская область <span class="region-count">10 членов</span></h4>
+                        <div class="protocol-meta">
+                            <div>
+                                <p><strong>Дата:</strong> 21 апреля 2025 года</p>
+                                <p><strong>Место:</strong> г. Подольск, ул. Подмосковная, д. 10</p>
+                            </div>
+                            <div>
+                                <p><strong>Присутствовали:</strong> 10 членов</p>
+                                <p><strong>Делегаты:</strong> Антон Космический, Иосиф Виссарионович Горийский</p>
+                            </div>
+                        </div>
+                        
+                        <p><strong>Повестка дня:</strong></p>
+                        <ol>
+                            <li>Создание регионального отделения ЦМП в Московской области.</li>
+                            <li>Выборы руководителя отделения.</li>
+                        </ol>
+                        
+                        <p><strong>Решения:</strong></p>
+                        <ol>
+                            <li>Создано региональное отделение ЦМП в Московской области.<br>
+                            <div class="protocol-votes">Голосование: «за» — 10, «против» — 0, «воздержались» — 0.</div></li>
+                            <li>Руководителем избран Антон Космический.<br>
+                            <div class="protocol-votes">Голосование: «за» — 9, «против» — 0, «воздержались» — 1.</div></li>
+                        </ol>
+                        
+                        <div class="signatures">
+                            <p><strong>Руководитель:</strong> Антон Космический</p>
+                            <p><strong>Секретарь собрания:</strong> Иосиф Виссарионович Горийский</p>
+                        </div>
+                    </div>
+                    
+                    <div class="final-stats">
+                        <h3>Итоговая статистика по всем отделениям</h3>
+                        <div class="stats-grid">
+                            <div class="stat-box">
+                                <div class="stat-number">45</div>
+                                <div class="stat-label">Региональных отделений</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-number">500</div>
+                                <div class="stat-label">Общее количество членов партии</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-number">85%</div>
+                                <div class="stat-label">Представителей рабочего класса</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-number">100%</div>
+                                <div class="stat-label">Поддержка программы партии</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="pagination">
+                        <a href="regional-branches.html">Страница 1</a> |
+                        <a href="regional-branches-2.html">Страница 2</a> |
+                        <a href="regional-branches-3.html">Страница 3</a> |
+                        <a href="regional-branches-4.html">Страница 4</a> |
+                        <a href="regional-branches-5.html">Страница 5</a> |
+                        <a href="regional-branches-6.html">Страница 6</a> |
+                        <a href="regional-branches-7.html">Страница 7</a> |
+                        <a href="#" class="active">Страница 8</a> |
+                        <a href="regional-branches-9.html">Страница 9</a>
+                    </div>
+                </div>
+                <a href="index.html" class="back-button">← Вернуться на главную</a>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2025 Цифровая Марксистская Партия - Пролетарии всех стран, соединяйтесь!</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Региональные отделения - Цифровая Марксистская Партия</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <style>
+        .protocol-section {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            border: 1px solid var(--soviet-gold);
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.03);
+        }
+        
+        .protocol-section h4 {
+            color: var(--soviet-gold);
+            border-bottom: 2px solid var(--soviet-red);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .protocol-meta {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .protocol-meta p {
+            margin: 0.3rem 0;
+        }
+        
+        .date-header {
+            font-size: 1.2rem;
+            color: var(--soviet-gold);
+            margin: 1.5rem 0;
+            text-align: center;
+            background-color: rgba(187, 10, 10, 0.1);
+            padding: 0.5rem;
+            border-radius: 5px;
+        }
+        
+        .protocol-votes {
+            background-color: rgba(255, 215, 0, 0.1);
+            padding: 0.5rem;
+            border-radius: 3px;
+            margin: 0.5rem 0;
+        }
+        
+        .signatures {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px dashed var(--soviet-gold);
+            font-style: italic;
+        }
+        
+        .pagination {
+            text-align: center;
+            margin: 2rem 0;
+            padding: 1rem;
+            background-color: rgba(187, 10, 10, 0.1);
+            border-radius: 5px;
+        }
+        
+        .region-count {
+            display: inline-block;
+            background-color: var(--soviet-red);
+            color: white;
+            padding: 0.2rem 0.5rem;
+            border-radius: 3px;
+            margin-left: 0.5rem;
+            font-size: 0.9rem;
+        }
+        
+        .tab-navigation {
+            display: flex;
+            margin: 1rem 0;
+            border-bottom: 2px solid var(--soviet-red);
+        }
+        
+        .tab-navigation button {
+            background: none;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            margin-right: 0.5rem;
+            color: white;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        
+        .tab-navigation button.active {
+            background-color: var(--soviet-red);
+            font-weight: bold;
+        }
+        
+        .tab-navigation button:hover:not(.active) {
+            background-color: rgba(187, 10, 10, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="star-container">
+                <div class="star">★</div>
+            </div>
+            <h1>Цифровая Марксистская Партия</h1>
+            <div class="hammer-sickle">☭</div>
+        </header>
+
+        <main>
+            <div class="document-container">
+                <div class="document-header">
+                    <h2>Региональные отделения</h2>
+                </div>
+                <div class="document-content">
+                    <h3>Протоколы учредительных собраний региональных отделений ЦМП</h3>
+                    
+                    <div class="tab-navigation">
+                        <button class="active">14 апреля</button>
+                        <button>15 апреля</button>
+                        <button>16 апреля</button>
+                    </div>
+                    
+                    <div class="date-header">
+                        <p>14 апреля 2025 года - продолжение</p>
+                    </div>
+                    
+                    <div class="protocol-section">
+                        <h4>6. Краснодарский край <span class="region-count">15 членов</span></h4>
+                        <div class="protocol-meta">
+                            <div>
+                                <p><strong>Дата:</strong> 14 апреля 2025 года</p>
+                                <p><strong>Место:</strong> г. Краснодар, ул. Марксистская, д. 3</p>
+                            </div>
+                            <div>
+                                <p><strong>Присутствовали:</strong> 15 членов</p>
+                                <p><strong>Делегаты:</strong> Аркадий Кубанцев, Фёдор Волгов</p>
+                            </div>
+                        </div>
+                        
+                        <p><strong>Повестка дня:</strong></p>
+                        <ol>
+                            <li>Создание регионального отделения ЦМП в Краснодарском крае.</li>
+                            <li>Выборы руководителя отделения.</li>
+                        </ol>
+                        
+                        <p><strong>Решения:</strong></p>
+                        <ol>
+                            <li>Создано региональное отделение ЦМП в Краснодарском крае.<br>
+                            <div class="protocol-votes">Голосование: «за» — 15, «против» — 0, «воздержались» — 0.</div></li>
+                            <li>Руководителем избран Аркадий Кубанцев.<br>
+                            <div class="protocol-votes">Голосование: «за» — 15, «против» — 0, «воздержались» — 0.</div></li>
+                        </ol>
+                        
+                        <div class="signatures">
+                            <p><strong>Руководитель:</strong> Аркадий Кубанцев</p>
+                            <p><strong>Секретарь собрания:</strong> Фёдор Волгов</p>
+                        </div>
+                    </div>
+                    
+                    <div class="protocol-section">
+                        <h4>7. Нижегородская область <span class="region-count">15 членов</span></h4>
+                        <div class="protocol-meta">
+                            <div>
+                                <p><strong>Дата:</strong> 14 апреля 2025 года</p>
+                                <p><strong>Место:</strong> г. Нижний Новгород, ул. Равенства, д. 8</p>
+                            </div>
+                            <div>
+                                <p><strong>Присутствовали:</strong> 15 членов</p>
+                                <p><strong>Делегаты:</strong> Фёдор Волгов, Вадим Жигулёв</p>
+                            </div>
+                        </div>
+                        
+                        <p><strong>Повестка дня:</strong></p>
+                        <ol>
+                            <li>Создание регионального отделения ЦМП в Нижегородской области.</li>
+                            <li>Выборы руководителя отделения.</li>
+                        </ol>
+                        
+                        <p><strong>Решения:</strong></p>
+                        <ol>
+                            <li>Создано региональное отделение ЦМП в Нижегородской области.<br>
+                            <div class="protocol-votes">Голосование: «за» — 15, «против» — 0, «воздержались» — 0.</div></li>
+                            <li>Руководителем избран Фёдор Волгов.<br>
+                            <div class="protocol-votes">Голосование: «за» — 15, «против» — 0, «воздержались» — 0.</div></li>
+                        </ol>
+                        
+                        <div class="signatures">
+                            <p><strong>Руководитель:</strong> Фёдор Волгов</p>
+                            <p><strong>Секретарь собрания:</strong> Вадим Жигулёв</p>
+                        </div>
+                    </div>
+                    
+                    <div class="protocol-section">
+                        <h4>8. Самарская область <span class="region-count">15 членов</span></h4>
+                        <div class="protocol-meta">
+                            <div>
+                                <p><strong>Дата:</strong> 14 апреля 2025 года</p>
+                                <p><strong>Место:</strong> г. Самара, ул. Пролетарская, д. 12</p>
+                            </div>
+                            <div>
+                                <p><strong>Присутствовали:</strong> 15 членов</p>
+                                <p><strong>Делегаты:</strong> Вадим Жигулёв, Максим Уралец</p>
+                            </div>
+                        </div>
+                        
+                        <p><strong>Повестка дня:</strong></p>
+                        <ol>
+                            <li>Создание регионального отделения ЦМП в Самарской области.</li>
+                            <li>Выборы руководителя отделения.</li>
+                        </ol>
+                        
+                        <p><strong>Решения:</strong></p>
+                        <ol>
+                            <li>Создано региональное отделение ЦМП в Самарской области.<br>
+                            <div class="protocol-votes">Голосование: «за» — 15, «против» — 0, «воздержались» — 0.</div></li>
+                            <li>Руководителем избран Вадим Жигулёв.<br>
+                            <div class="protocol-votes">Голосование: «за» — 15, «против» — 0, «воздержались» — 0.</div></li>
+                        </ol>
+                        
+                        <div class="signatures">
+                            <p><strong>Руководитель:</strong> Вадим Жигулёв</p>
+                            <p><strong>Секретарь собрания:</strong> Максим Уралец</p>
+                        </div>
+                    </div>
+                    
+                    <div class="protocol-section">
+                        <h4>9. Челябинская область <span class="region-count">10 членов</span></h4>
+                        <div class="protocol-meta">
+                            <div>
+                                <p><strong>Дата:</strong> 14 апреля 2025 года</p>
+                                <p><strong>Место:</strong> г. Челябинск, ул. Сталеваров, д. 5</p>
+                            </div>
+                            <div>
+                                <p><strong>Присутствовали:</strong> 10 членов</p>
+                                <p><strong>Делегаты:</strong> Максим Уралец, Илья Сибиряков</p>
+                            </div>
+                        </div>
+                        
+                        <p><strong>Повестка дня:</strong></p>
+                        <ol>
+                            <li>Создание регионального отделения ЦМП в Челябинской области.</li>
+                            <li>Выборы руководителя отделения.</li>
+                        </ol>
+                        
+                        <p><strong>Решения:</strong></p>
+                        <ol>
+                            <li>Создано региональное отделение ЦМП в Челябинской области.<br>
+                            <div class="protocol-votes">Голосование: «за» — 10, «против» — 0, «воздержались» — 0.</div></li>
+                            <li>Руководителем избран Максим Уралец.<br>
+                            <div class="protocol-votes">Голосование: «за» — 10, «против» — 0, «воздержались» — 0.</div></li>
+                        </ol>
+                        
+                        <div class="signatures">
+                            <p><strong>Руководитель:</strong> Максим Уралец</p>
+                            <p><strong>Секретарь собрания:</strong> Илья Сибиряков</p>
+                        </div>
+                    </div>
+                    
+                    <div class="protocol-section">
+                        <h4>10. Омская область <span class="region-count">10 членов</span></h4>
+                        <div class="protocol-meta">
+                            <div>
+                                <p><strong>Дата:</strong> 14 апреля 2025 года</p>
+                                <p><strong>Место:</strong> г. Омск, ул. Ленина, д. 20</p>
+                            </div>
+                            <div>
+                                <p><strong>Присутствовали:</strong> 10 членов</p>
+                                <p><strong>Делегаты:</strong> Илья Сибиряков, Станислав Волжанин</p>
+                            </div>
+                        </div>
+                        
+                        <p><strong>Повестка дня:</strong></p>
+                        <ol>
+                            <li>Создание регионального отделения ЦМП в Омской области.</li>
+                            <li>Выборы руководителя отделения.</li>
+                        </ol>
+                        
+                        <p><strong>Решения:</strong></p>
+                        <ol>
+                            <li>Создано региональное отделение ЦМП в Омской области.<br>
+                            <div class="protocol-votes">Голосование: «за» — 10, «против» — 0, «воздержались» — 0.</div></li>
+                            <li>Руководителем избран Илья Сибиряков.<br>
+                            <div class="protocol-votes">Голосование: «за» — 10, «против» — 0, «воздержались» — 0.</div></li>
+                        </ol>
+                        
+                        <div class="signatures">
+                            <p><strong>Руководитель:</strong> Илья Сибиряков</p>
+                            <p><strong>Секретарь собрания:</strong> Станислав Волжанин</p>
+                        </div>
+                    </div>
+                    
+                    <div class="date-header">
+                        <p>15 апреля 2025 года</p>
+                    </div>
+                    
+                    <div class="protocol-section">
+                        <h4>11. Волгоградская область <span class="region-count">10 членов</span></h4>
+                        <div class="protocol-meta">
+                            <div>
+                                <p><strong>Дата:</strong> 14 апреля 2025 года</p>
+                                <p><strong>Место:</strong> г. Волгоград, ул. Героев, д. 4</p>
+                            </div>
+                            <div>
+                                <p><strong>Присутствовали:</strong> 10 членов</p>
+                                <p><strong>Делегаты:</strong> Станислав Волжанин, Денис Енисейский</p>
+                            </div>
+                        </div>
+                        
+                        <p><strong>Повестка дня:</strong></p>
+                        <ol>
+                            <li>Создание регионального отделения ЦМП в Волгоградской области.</li>
+                            <li>Выборы руководителя отделения.</li>
+                        </ol>
+                        
+                        <p><strong>Решения:</strong></p>
+                        <ol>
+                            <li>Создано региональное отделение ЦМП в Волгоградской области.<br>
+                            <div class="protocol-votes">Голосование: «за» — 10, «против» — 0, «воздержались» — 0.</div></li>
+                            <li>Руководителем избран Станислав Волжанин.<br>
+                            <div class="protocol-votes">Голосование: «за» — 10, «против» — 0, «воздержались» — 0.</div></li>
+                        </ol>
+                        
+                        <div class="signatures">
+                            <p><strong>Руководитель:</strong> Станислав Волжанин</p>
+                            <p><strong>Секретарь собрания:</strong> Денис Енисейский</p>
+                        </div>
+                    </div>
+                    
+                    <div class="protocol-section">
+                        <h4>12. Красноярский край <span class="region-count">10 членов</span></h4>
+                        <div class="protocol-meta">
+                            <div>
+                                <p><strong>Дата:</strong> 14 апреля 2025 года</p>
+                                <p><strong>Место:</strong> г. Красноярск, ул. Сибирская, д. 9</p>
+                            </div>
+                            <div>
+                                <p><strong>Присутствовали:</strong> 10 членов</p>
+                                <p><strong>Делегаты:</strong> Денис Енисейский, Артур Камский</p>
+                            </div>
+                        </div>
+                        
+                        <p><strong>Повестка дня:</strong></p>
+                        <ol>
+                            <li>Создание регионального отделения ЦМП в Красноярском крае.</li>
+                            <li>Выборы руководителя отделения.</li>
+                        </ol>
+                        
+                        <p><strong>Решения:</strong></p>
+                        <ol>
+                            <li>Создано региональное отделение ЦМП в Красноярском крае.<br>
+                            <div class="protocol-votes">Голосование: «за» — 10, «против» — 0, «воздержались» — 0.</div></li>
+                            <li>Руководителем избран Денис Енисейский.<br>
+                            <div class="protocol-votes">Голосование: «за» — 10, «против» — 0, «воздержались» — 0.</div></li>
+                        </ol>
+                        
+                        <div class="signatures">
+                            <p><strong>Руководитель:</strong> Денис Енисейский</p>
+                            <p><strong>Секретарь собрания:</strong> Артур Камский</p>
+                        </div>
+                    </div>
+                    
+                    <div class="protocol-section">
+                        <h4>13. Пермский край <span class="region-count">10 членов</span></h4>
+                        <div class="protocol-meta">
+                            <div>
+                                <p><strong>Дата:</strong> 14 апреля 2025 года</p>
+                                <p><strong>Место:</strong> г. Пермь, ул. Революции, д. 15</p>
+                            </div>
+                            <div>
+                                <p><strong>Присутствовали:</strong> 10 членов</p>
+                                <p><strong>Делегаты:</strong> Артур Камский, Григорий Чернозёмов</p>
+                            </div>
+                        </div>
+                        
+                        <p><strong>Повестка дня:</strong></p>
+                        <ol>
+                            <li>Создание регионального отделения ЦМП в Пермском крае.</li>
+                            <li>Выборы руководителя отделения.</li>
+                        </ol>
+                        
+                        <p><strong>Решения:</strong></p>
+                        <ol>
+                            <li>Создано региональное отделение ЦМП в Пермском крае.<br>
+                            <div class="protocol-votes">Голосование: «за» — 10, «против» — 0, «воздержались» — 0.</div></li>
+                            <li>Руководителем избран Артур Камский.<br>
+                            <div class="protocol-votes">Голосование: «за» — 10, «против» — 0, «воздержались» — 0.</div></li>
+                        </ol>
+                        
+                        <div class="signatures">
+                            <p><strong>Руководитель:</strong> Артур Камский</p>
+                            <p><strong>Секретарь собрания:</strong> Григорий Чернозёмов</p>
+                        </div>
+                    </div>
+                    
+                    <div class="protocol-section">
+                        <h4>14. Воронежская область <span class="region-count">10 членов</span></h4>
+                        <div class="protocol-meta">
+                            <div>
+                                <p><strong>Дата:</strong> 14 апреля 2025 года</p>
+                                <p><strong>Место:</strong> г. Воронеж, ул. Справедливости, д. 6</p>
+                            </div>
+                            <div>
+                                <p><strong>Присутствовали:</strong> 10 членов</p>
+                                <p><strong>Делегаты:</strong> Григорий Чернозёмов, Константин Поволжский</p>
+                            </div>
+                        </div>
+                        
+                        <p><strong>Повестка дня:</strong></p>
+                        <ol>
+                            <li>Создание регионального отделения ЦМП в Воронежской области.</li>
+                            <li>Выборы руководителя отделения.</li>
+                        </ol>
+                        
+                        <p><strong>Решения:</strong></p>
+                        <ol>
+                            <li>Создано региональное отделение ЦМП в Воронежской области.<br>
+                            <div class="protocol-votes">Голосование: «за» — 10, «против» — 0, «воздержались» — 0.</div></li>
+                            <li>Руководителем избран Григорий Чернозёмов.<br>
+                            <div class="protocol-votes">Голосование: «за» — 10, «против» — 0, «воздержались» — 0.</div></li>
+                        </ol>
+                        
+                        <div class="signatures">
+                            <p><strong>Руководитель:</strong> Григорий Чернозёмов</p>
+                            <p><strong>Секретарь собрания:</strong> Константин Поволжский</p>
+                        </div>
+                    </div>
+                    
+                    <div class="protocol-section">
+                        <h4>15. Саратовская область <span class="region-count">10 членов</span></h4>
+                        <div class="protocol-meta">
+                            <div>
+                                <p><strong>Дата:</strong> 15 апреля 2025 года</p>
+                                <p><strong>Место:</strong> г. Саратов, ул. Волжская, д. 2</p>
+                            </div>
+                            <div>
+                                <p><strong>Присутствовали:</strong> 10 членов</p>
+                                <p><strong>Делегаты:</strong> Константин Поволжский, Семён Байкалов</p>
+                            </div>
+                        </div>
+                        
+                        <p><strong>Повестка дня:</strong></p>
+                        <ol>
+                            <li>Создание регионального отделения ЦМП в Саратовской области.</li>
+                            <li>Выборы руководителя отделения.</li>
+                        </ol>
+                        
+                        <p><strong>Решения:</strong></p>
+                        <ol>
+                            <li>Создано региональное отделение ЦМП в Саратовской области.<br>
+                            <div class="protocol-votes">Голосование: «за» — 10, «против» — 0, «воздержались» — 0.</div></li>
+                            <li>Руководителем избран Константин Поволжский.<br>
+                            <div class="protocol-votes">Голосование: «за» — 10, «против» — 0, «воздержались» — 0.</div></li>
+                        </ol>
+                        
+                        <div class="signatures">
+                            <p><strong>Руководитель:</strong> Константин Поволжский</p>
+                            <p><strong>Секретарь собрания:</strong> Семён Байкалов</p>
+                        </div>
+                    </div>
+                    
+                    <div class="pagination">
+                        <a href="regional-branches.html">Страница 1</a> |
+                        <a href="#" class="active">Страница 2</a> |
+                        <a href="regional-branches-3.html">Страница 3</a> |
+                        <a href="regional-branches-4.html">Страница 4</a> |
+                        <a href="regional-branches-5.html">Страница 5</a> |
+                        <a href="regional-branches-6.html">Страница 6</a> |
+                        <a href="regional-branches-7.html">Страница 7</a> |
+                        <a href="regional-branches-8.html">Страница 8</a> |
+                        <a href="regional-branches-9.html">Страница 9</a>
+                    </div>
+                </div>
+                <a href="index.html" class="back-button">← Вернуться на главную</a>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2025 Цифровая Марксистская Партия - Пролетарии всех стран, соединяйтесь!</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
